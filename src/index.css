@@ -1,0 +1,42 @@
+html, 
+body  {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 24px;
+}
+
+h2 {
+  margin: 0 0 35px 0;
+  line-height: 35px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #444;
+  margin: 35px 0 10px 0;
+}
+
+button, input, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.cart-notes {
+  line-height: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

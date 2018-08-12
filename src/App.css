@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+  flex: 0 1 50px;
+  display: none;
+}
+
+main {
+  flex: 1 0 350px;
+  display: flex;
+}
+
+main > section {
+  flex: 1 0 350px;
+  text-align: left;
+  padding: 20px 30px;
+  background: #fafafa;
+  overflow-y: auto;
+  position: relative;
+}
+
+main > section h2 {
+  background: #f0f0f0;
+  padding: 20px 30px;
+  margin: -20px -30px 25px;
+  border-bottom: 2px solid #222;
+}
+
+main > aside {
+  border-left: 2px solid #222;
+  flex: 0 0 300px;
+  text-align: left;
+}
+
+/* Nav */
+main > nav {
+  background-color: #f9df00;
+  flex: 0 0 100px;
+  position: relative;
+}
+
+main > nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  background-color: #222;
+  height: 100%;
+}
+
+main > nav img {
+  padding: 20px 29px 20px 27px;
+  box-sizing: border-box;
+}
+
+main > nav ul,
+main > nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+main > nav li {
+  margin-bottom: -2px;
+}
+
+main > nav a {
+  display: flex;
+  padding: 20px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #222;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-right: 0;
+  border-left: 0;
+  position: relative;
+  text-decoration: none;
+}
+
+
+main > nav a:hover {
+  background:rgba(133, 82, 82, 0.4);
+}
+
+main > nav a.active {
+  background: #fafafa;
+  color: #222;
+  text-decoration: underline;
+  border-color: #222;
+  z-index: 2;
+}
